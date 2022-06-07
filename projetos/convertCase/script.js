@@ -8,7 +8,7 @@ let firstUppersReference = document.querySelector('#firstUppers');
 let textareaReference = document.querySelector('#textarea');
 let textareaValue = "";
 function captureTextareaValue(){
-  textareaValue = textareaReference.value;
+  textareaValue = textareaReference.value.toLowerCase();
 };
 
 
