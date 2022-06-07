@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+*{
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  width: 100%;
+  max-width: 1024px;
+}
+
+header{
+  background-color: bisque;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+main h2{
+  margin: 29px auto;
+}
+
+.buttonArea{
+  display: flex;
+  justify-content: center;
+  margin: 8px auto;
+  width: 95%;
+  max-width: 960px;
+}
+
+button{
+  padding: 8px;
+  margin: 0 6px;
+  background-color: brown;
+  color: bisque;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#textarea{
+  resize: vertical;
+  padding: 4px;
+  width: 95%;
+  max-width: 960px;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: bisque;
+  height: 100px;
+}
+
+.container-footer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1024px;
+}
+
+
+.right-area,
+.left-area{
+  margin: 0;
+}
+
+  @media screen and (max-width: 640px){
+
+    header h1{
+      text-align: center;
+    }
+    
+    main h2{
+      margin: 29px 10px;
+      text-align: center;
+    }
+
+    .buttonArea{
+      flex-direction: column;
+    }
+
+    button{
+      margin: 5px;
+      height: 60px;
+    }
+
+    .container-footer{
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 1024px;
+    }
+
+    .right-area,
+    .left-area{
+      margin: 10px 0;
+    }
+
+
+  }

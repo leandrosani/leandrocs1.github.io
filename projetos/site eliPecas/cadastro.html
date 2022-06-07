@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="./css/style_cadastro.css?<?php echo VERSION; ?>" rel="stylesheet" type="text/css" />
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <script src="./scripts/header.js"></script>
+    </header>
+    
+    <main>
+        <section class="form-wrap">
+            <form action="">
+                <label for="">Montadora    
+                    <input type="text" class="montadora">
+                </label>
+
+                <label for="">Marca    
+                    <input type="text" class="marca">
+                </label>
+
+                <label for="">Ano    
+                    <input type="text" class="ano">
+                </label>
+
+                <button id="btn">
+                    Cadastrar
+                </button>
+            </form>
+        </section>
+
+        <section class="tabela-wrap">
+            <table class="main-table">
+                <tr class="tr-main"> 
+                    <th>Montadora</th>
+                    <th>Montadora</th>
+                    <th>Ano</th>
+                    <th>DEL</th>
+                </tr>
+
+                <!--JS LOOP FOREACH
+                    <tr class="col-seconds"> COLUNA
+                        <td>Honda</td> LINHA
+                        <td>Civic</td>
+                        <td>2005 / 2022</td>
+                    </tr>
+                -->
+            </table>
+
+            
+        </section>
+    </main>
+
+    <script src="./scripts/cadastro.js"></script>
+
+</body>
+</html>

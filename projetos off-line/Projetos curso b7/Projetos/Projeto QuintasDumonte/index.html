@@ -1,0 +1,113 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+
+    <title>Quintas DuMonte</title>
+</head>
+<body>
+    <header>  
+        <!--background-->
+            <div class="background-img"></div><!--background-img-->
+            <div class="cabecalho"></div><!--cabecalho-->
+
+            <div class="container">
+                    <div class="wraper-logo">
+                        <div class="logo"></div><!--logo-->
+                        <div class="nome"><a href="index.html">Quintas DuMonte</a></div>
+                    
+
+                    <nav class="menu-mobile">
+                        <a class="btn-close" href="#">X</a>
+                        <i class="btn-menu fas fa-align-justify"></i>
+                        <ul class="items-mobile">
+                            <li><a href="galeria.html">Galeria</a></li>
+                            <li><a href="#">Restaurante</a></li>
+                            <li><a href="#">Reservas</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav><!--menu-mobile-->
+                </div><!--wraper-logo--> 
+
+                    <nav class="desktop">
+                        <ul>
+                            <li><a href="galeria.html">Galeria</a></li>
+                            <li><a href="">Restaurante</a></li>
+                            <li><a href="">Reservas</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav><!--desktop-->
+            </div><!--container-->
+
+<!----------------------------------------------------------------------------->   
+                <div class="centro"></div><!--centro-->
+                    <div class="container2">
+                                <div class="wraper-logo">
+                                    <div class="logo-central"></div><!--logo-central-->
+                                </div><!--wraper-logo-->
+                        <div class="chamada">
+                            <h2>Sítio de Lazer Quintas DuMonte</h2>
+                            <h1>Venha relaxar e aproveitar a tranquilidade nas Montanhas Capixabas</h1>
+                        </div><!--chamada-->
+                    </div><!--container2-->
+            
+
+            <footer class="footer1">
+                <div class="Fume-verde"></div><!--Fume-verde-->
+                <div class="container">
+                    <div class="rodape">
+            
+                        <div class="contato">
+                            <p>rigamonte@quintasdumonte.com</p>
+                            <p>Telefone: (27)99588-8855</p>
+                            <p>endereço: Domingos martins</p>
+                            <p>Tijuco Preto</p>
+                            <p>Cep: 29260-000</p>   
+                        </div><!--contato-->
+                    
+                        <div class="direitos"><p>Todos os direitos reservados. </br>© Este material não pode ser</br> 
+                            publicado, transmitido por broadcast, </br>
+                            reescrito ou redistribuição sem prévia autorização.</p>
+                        </div><!--direitos-->
+                    
+                        
+                    </div><!--rodape-->
+                </div><!--container--> 
+                
+            </footer><!--footer1-->
+    </header>
+
+    <script>
+        var btnAbrir = document.querySelector('.btn-menu');
+        var btnClose = document.querySelector('.btn-close');
+        btnAbrir.addEventListener('click',function(){
+            
+            let menu = document.querySelector('.items-mobile');
+            
+           menu.style.height = 205;
+           
+           btnAbrir.style.display = "none";
+           btnClose.style.display = "block";
+            
+        });
+
+        
+        btnClose.addEventListener('click',function(){
+
+            let menu = document.querySelector('.items-mobile');
+            
+           menu.style.height = 0;
+           
+           btnClose.style.display = "none";
+           btnAbrir.style.display = "block";
+           
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+  }
+
+.display-none .img{display: none;}
+
+a{text-decoration: none;}
+
+/*Seção da pagina secundaria*/
+
+section.secundaria{
+    display: flex;
+    
+}
+body.pagina-2{}
+
+.titulo-texto{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.secundaria h1{
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.texto-materia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(235, 230, 230);
+    font-size: 26px;
+    margin: 0 60px;
+    margin-bottom: 120px;
+    letter-spacing: 3px;
+    line-height: 36px;
+    width: 70%;
+}
+
+aside{
+    width: 40%;
+    border: 1px solid #000;
+}
+
+/*Inicio pagina principal*/
+
+body{
+    background-color: #141414;
+}
+
+header.header-slide{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 50px;
+    background: #141414;
+    overflow-x:hidden;
+}
+
+header .header-fixed{
+    background: rgba(20,20,20,0.2);
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    color: #FFF;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 50px;
+    z-index: 9999;
+    transition: ease .5s;
+}
+
+header .logo{
+    color: #FFF;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+header .logo spam{
+    color: red;
+    font-size: 32px;
+}
+
+.menu-desktop{
+}
+
+.menu-desktop ul{
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+}
+
+.menu-desktop li{
+    margin-left: 30px;
+}
+
+.menu-desktop a{
+    text-decoration: none;
+    color: #FFF;
+    transition: 0.3s;
+    padding: 18px;
+}
+
+.menu-desktop a:hover{
+    color: red;
+    border-bottom: 3px solid red;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.menu-desktop .submenu{
+    position: absolute;
+    display: none;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    height: 200px;
+    right: 2px;
+    width: 280px;
+    transition: 0.3s;
+    background-color: rgba(255, 0, 0, 0.1);
+    opacity: 0;
+ }
+
+ .submenu a{
+    display: inline-block;
+    width: 100%;
+ }
+
+ .menu-desktop .abrir-submenu:hover .submenu{
+     display: inline-block;
+     transition: 0.3s;
+     opacity: 1;
+ }
+
+ .submenu ul{
+     margin: 6px;
+ }
+
+.submenu li{
+    margin: 0;
+    padding: 0;
+ }
+
+
+header .slider{
+    height: inherit;
+    width: 300vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px; /*mudar 0, -100vw e -200vw para passar os sliders*/
+    transition: ease-in 0.3s;
+}
+
+header .slider-1,
+header .slider-2,
+header .slider-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: inherit;
+}
+
+.slider a{
+    height: inherit;
+    width: inherit;
+    text-decoration: none;
+}
+
+/*********** SLIDES TOP 3 **********/
+
+.slider-1 .img{
+    background-image: "";
+    background-position: bottom;
+    background-size: cover;
+    height: inherit;
+    width: inherit;
+    display: flex;
+}
+
+.slider-2 .img{
+    background-image: "";
+    background-position: top;
+    background-size: cover;
+    height: inherit;
+    width: inherit;
+    display: flex;
+}
+
+.slider-3 .img{
+    background-image: "";
+    background-position: top;
+    background-size: cover;
+    height: inherit;
+    width: inherit;
+    display: flex;
+}
+
+/*************************/
+
+.gradient-botton{
+    background: linear-gradient(to top, #141414 5%, transparent 95%);
+    height: inherit;
+    width: inherit;
+}
+.gradient-left{
+    background: linear-gradient(to right, #141414 25%, transparent 75%);
+    height: inherit;
+    width: inherit;
+}
+
+header .slider-2{
+}
+
+header .slider-3{
+}
+
+
+.slider-1--chamada,
+.slider-2--chamada,
+.slider-3--chamada{
+    color: #FFF;
+    width: 50vw;
+    padding-top: 230px;
+    padding-left: 70px;
+    background: transparent;
+    
+}
+
+.chamada-title{
+    font-size: 32px;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+    color: rgb(231,10,89);
+}
+
+.chamda-description{
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+header .arrow-selector--right,
+header .arrow-selector--left{
+    position: absolute;
+    top: 0;
+    height: 85vh;
+    background: rgba(20,20,20,.2);
+    opacity: 0.3;
+    width: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: rgb(231,10,89);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+header .arrow-selector--right:hover,
+header .arrow-selector--left:hover{
+    opacity: 1;
+    transition: ease .3s;
+    background: rgba(10,10,10,.4);
+}
+
+header .arrow-selector--left{
+    left: 0;
+}
+
+header .arrow-selector--right{
+    right: 0;
+}
+
+/* FIM DO HEADER ***********************/
+
+/*Section-1*/
+section.slide{
+    margin-top: -220px;
+    margin-left: 50px;
+}
+
+.lista{
+    width: 100%;
+    height: 300px;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section .arrow-selector--link{
+    height: 180px;
+    background: rgba(20,20,20,.2);
+    opacity: 0.6;
+    width: 56px; /*336*/
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 60px;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    color: black;
+    z-index: 998;
+    transition: ease 0.4s;
+    background: rgb(170, 170, 170);
+    font-weight: bold;
+}
+section .arrow-selector--link:hover{
+    width: 336px;
+    background: rgb(231,10,89);
+    color: black;
+    opacity: 0.8;
+}
+
+.arrow-selector--link a{
+    font-size: 12px;
+    color: black;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transition: ease 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+.arrow-selector--link:hover a{
+    font-size: 21px;
+}
+
+section .arrow-selector--right,
+section .arrow-selector--left{
+    height: 180px;
+    background: rgba(20,20,20,.2);
+    opacity: 0.3;
+    width: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: rgb(231,10,89);
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 998;
+}
+section .arrow-selector--left{left: 0;}
+section .arrow-selector--right{right: 0;}
+
+section .arrow-selector--right:hover,
+section .arrow-selector--left:hover{
+    opacity: 1;
+    transition: ease .2s;
+    background: rgba(255, 0, 0, 0.1);
+    color: #000;
+}
+
+.lista .lista-titulo{
+    color: #FFF;
+    color: rgb(231,10,89);
+}
+
+.lista .lista-wrap{
+    width: inherit;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -30px;
+    transition: ease 1s;
+    margin-left: 0; /*mudar 0, -100vw e -200vw para passar os sliders*/
+}
+
+.lista .img{
+    margin-left: -10px;
+    background-image: url("");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    min-width: 290px;
+    transform: scale(0.8);
+    cursor: pointer;
+    transition: ease 0.2s;
+    border-radius: 15px;
+    border: 1px solid #000;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.lista .img:hover{
+    transform: scale(0.9);
+    border: 2px solid #000;
+    z-index: 997;
+    transition-delay: 0.3s;
+    -webkit-box-shadow: 0px 6px 9px 1px rgba(0,0,0,0.86); 
+    box-shadow: 0px 6px 9px 1px rgba(0,0,0,0.86);
+}
+
+.img .titulo{
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.lista .img h4{
+    color: #FFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+footer{
+    height: 56px;
+    background: rgb(231,10,89);
+    display: flex;
+}
+
+footer .left-wrap,
+footer .right-wrap{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+footer .left-wrap{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer .right-wrap{
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: flex-end;  
+}
+footer h3{
+    margin-left: 26px;
+    cursor: pointer;
+}
+
+.texto{
+    font-size: 55px;
+}

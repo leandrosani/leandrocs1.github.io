@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{margin: 0 auto; width: 100%; height: 100%;}
+.container{width: 100%; max-width: 1024px; margin: 0 auto; padding: 0 2%;}
+p{text-align: left;}
+
+/*****HEADER SITE*******/
+
+header{
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+header > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul{
+    display: flex;  
+}
+
+nav ul{display: flex; list-style-type: none;color: #7e7e7e;}
+
+nav a{
+    text-decoration: none;
+    padding: 15px;
+    color: #7e7e7e;  
+    display: block;
+}
+nav .active a,
+nav a:hover{
+    background-color: #39aae1;
+    color: #FFFFFF;
+}
+
+/****************Section1-banner**************/
+
+section{
+    display: flex;
+    width: 100%;
+    height: 670px;
+}
+
+section.banner{
+    background-image: url(../images/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+section .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner .chamada1{
+    color: #ffffff;
+}
+
+.chamada1 h1{
+    font-size: 70px;
+    padding-top: 100px;
+    margin-bottom: 30px;
+}
+
+.chamada1 p{
+    font-size: 21px;
+}
+
+.banner .boxs{
+    display: flex;
+    width: 100%;
+    height: 210px;
+    color: #FFFFFF;
+}
+
+.boxs .box1{
+    background-color: #39aae1;
+    height: 100%;
+    flex: 1;
+}
+
+.boxs .box2{
+    background-color: #0079c7;
+    height: 100%;
+    flex: 1;
+}
+
+.boxs .box3{
+    background-color: #2b4c99;
+    height: 100%;
+    flex: 1;
+}
+
+.boxs  h1, .boxs  p{
+    padding: 20px 0px 0px 20px;
+    display: block;
+}
+
+.boxs h1{font-size: 21;}
+.boxs p{font-size:12;}
+
+button{
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    display: block;
+}
+
+/****************Section2-noticeAndAside**************/
+section.notice-aside{height: auto;}
+section.notice-aside .container{
+    display: flex;
+    flex-direction: row;
+}
+
+.notice-aside .notice .titulo-borda > h1, aside h1{
+    display: flex;
+    padding: 20px 0 10px 0;
+    font-size: 21px;
+    width: 100%;
+}
+
+.titulo-borda{
+    width: 100%;
+}
+
+.border{border-bottom: 2px solid #36a9e1;width: 50px;}
+
+.notice-aside .notice{
+    flex: 2;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.notice-aside aside{
+    flex: 1;
+} 
+
+.data{
+    max-width: 150px;
+    height: 35px;
+    color: #FFFFFF;
+    margin: 15px 0;
+    display: flex;
+    font-size: 12px;
+}
+
+.data .day{background-color: #39aae1;}
+
+.data .month{background-color: #2b4c99;}
+ 
+.data .day, .month{
+    padding: 10px;
+    margin: 1px;
+}
+
+.img{
+    background-image: url(../images/dr.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 190px;
+    width: 100%;
+}
+
+.notice-aside .notice h1{
+    font-size: 23px;
+    font-weight: normal;
+} 
+
+.notice-aside .notice p{
+    color: #5c5c5c;
+    font-size: 14px;
+    margin: 13px 0px 13px 0px;
+    line-height: 20px;
+} 
+
+.notice-aside .not1, .not2, .not3, .not4{
+    width: 50%;
+    padding-right: 20px;
+}
+
+.divMae{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.div1, .div2, .div3, .div4{
+    width: 48%;
+    height: 120px;
+    background-color: teal;
+    margin: 1%;
+    cursor: pointer;
+}
+
+/***********FOOTER***********/
+
+footer{
+    width: 100%;
+    background-color: #1e1e1e;
+    height: auto;
+}
+
+footer .boxsFooter{
+    width: 100%;
+    height: 58px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+footer .boxf1, .boxf2, .boxf3{
+    flex: 1;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+footer .boxf1{
+    background-color: #39aae1;
+}
+
+footer .boxf2{
+    background-color: #0079c7; 
+}
+
+footer .boxf3{
+    background-color: #2b4c99;
+}
+
+footer .chamadaFooter{
+    width: 100%;
+    display: flex;
+    color: white;
+    font-size: 12px;
+}
+
+.chamadaFooter p{
+    padding: 20px;
+}
+
+.direitos{
+    border-top: 1px solid #2c2c2c;
+    padding: 20px 0 20px 0;
+    font-size: 12px;
+    color: #5c5c5c;;
+}
+

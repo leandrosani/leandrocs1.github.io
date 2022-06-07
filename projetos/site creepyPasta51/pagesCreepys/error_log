@@ -1,0 +1,2 @@
+[22-Jun-2021 22:39:06 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/u452327432/domains/creepypasta51.com.br/public_html/pagesCreepys/testando.php on line 49
+[22-Jun-2021 22:39:28 UTC] PHP Notice:  Array to string conversion in /home/u452327432/domains/creepypasta51.com.br/public_html/pagesCreepys/testando.php on line 49

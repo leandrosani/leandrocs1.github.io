@@ -1,0 +1,22 @@
+
+section.slide{
+    height: calc(100vh - 220px);
+    background-color: #555;
+    overflow: hidden;
+}
+
+section .slide-modificator{
+    width: 300vw;   
+    height: 100%;
+    display: flex;
+    margin-left: 0; /*modificar Slide 0, -100vw e -200vw*/
+}
+
+.slide1,
+.slide2,
+.slide3{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

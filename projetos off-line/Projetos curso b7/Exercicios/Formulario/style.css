@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 93%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.w30{
+    width: 33.3%;
+}
+
+.w25{
+    width: 25%;
+}
+
+.container {max-width: 880px; width: 100%; margin: 0 auto; padding:20px;}
+
+#fomulario{
+    margin: 5% auto;
+    border: 1px solid #099;
+    width: 920px;
+    height: auto;
+    padding: 10px 0;
+}
+
+.cadastro{
+    margin: 0 auto;
+    height: auto;
+    width: 900;
+    border: 1px solid #CCCCCC;
+    margin: 10px;
+}
+
+h3{
+    width: 100%;
+    background-color: whitesmoke;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #CCC;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+input,
+select{
+    margin-top: 5px;
+    padding: 3px;
+}
+
+input[type="date"]{
+    padding: 1px;
+}
+
+input[type="email"]{
+    width: 260px;
+}
+
+input[type="password"]{
+    width: 100px;
+}
+
+label{
+    display: block;
+    padding: 6px 10px;
+}
+
+button{
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 13px;
+    width: 100px;
+}
