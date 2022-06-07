@@ -104,6 +104,9 @@ footer{
     .left-area{
       margin: 10px 0;
     }
-
+    
+    footer{
+      position:relative;
+    }
 
   }
