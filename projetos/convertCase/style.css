@@ -7,6 +7,11 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body{
+  height: auto;
+  background-color: #282a36;
+}
+
 textarea:focus, input:focus, select:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
@@ -19,11 +24,12 @@ textarea:focus, input:focus, select:focus {
 }
 
 header{
-  background-color: bisque;
+  background-color: #a52a2a;
 }
 
 main{
   margin: 90px 0;
+  background-color: #282a36;
 }
 
 .title{
@@ -83,6 +89,7 @@ button:hover{
   max-width: 920px;
   font-size: 16px;
   font-weight: 400;
+  background-color: #dbdbdb;
 }
 
 footer{
@@ -91,7 +98,7 @@ footer{
   width: 100%;
   position:absolute;
   bottom: 0;
-  background-color: bisque;
+  background-color: #a52a2a;
   height: 100px;
 }
 
