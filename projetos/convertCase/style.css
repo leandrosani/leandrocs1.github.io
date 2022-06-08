@@ -85,7 +85,7 @@ button:hover{
   resize: vertical;
   padding: 5px;
   margin-right: 16px 16px;
-  width: 95%;
+  width: 98%;
   max-width: 920px;
   font-size: 16px;
   font-weight: 400;
@@ -123,11 +123,13 @@ footer{
     }
 
     main{
-      margin: 90px;
+      margin: 90px auto;
+      width: 100%;
     }
     
     .container-main{
       flex-direction: column;
+      width: 100%;
     }
     
     main h2{
@@ -167,3 +169,9 @@ footer{
     }
 
   }
+
+    @media screen and (max-width: 450px){
+      button{
+        width: 98%;
+      }
+    }
