@@ -7,9 +7,15 @@
   font-family: 'Roboto', sans-serif;
 }
 
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+} 
+
 .container{
-  width: 100%;
+  width: 90%;
   max-width: 1024px;
+  margin: 0 2px;
 }
 
 header{
@@ -17,37 +23,66 @@ header{
 }
 
 main{
-  display: flex;
-  flex-direction: column;
+  margin: 90px 0;
 }
 
-main h2{
-  margin: 29px auto;
+.title{
+  width: 90%;
+}
+
+.container-main{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  max-width: 800px;
+}
+
+header{
+  width: 100%;
+}
+
+h1,h2{
+  padding: 5px 0;
+  width: 80%;
 }
 
 .buttonArea{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 8px auto;
-  width: 95%;
-  max-width: 960px;
+  height: 300px;
 }
 
 button{
   padding: 8px;
-  margin: 0 6px;
+  margin: 6px;
   background-color: brown;
   color: bisque;
   font-weight: bold;
   font-size: 20px;
   cursor: pointer;
+  transition: 0.2s;
+  opacity: 0.9;
+}
+
+button:hover{
+  -moz-transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  opacity: 1;
 }
 
 #textarea{
   resize: vertical;
-  padding: 4px;
+  padding: 5px;
+  margin-right: 16px 16px;
   width: 95%;
-  max-width: 960px;
+  max-width: 920px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 footer{
@@ -63,8 +98,8 @@ footer{
 .container-footer{
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  max-width: 1024px;
+  width: 98%;
+  max-width: 1020px;
 }
 
 
@@ -73,24 +108,39 @@ footer{
   margin: 0;
 }
 
-  @media screen and (max-width: 640px){
 
-    header h1{
+  @media screen and (max-width: 780px){
+
+    header h1, h2{
       text-align: center;
+    }
+
+    main{
+      margin: 90px;
+    }
+    
+    .container-main{
+      flex-direction: column;
     }
     
     main h2{
-      margin: 29px 10px;
-      text-align: center;
+      margin: 29px auto;
     }
-
+    
     .buttonArea{
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 8px 0;
+      width: 100%;
+      height: auto;
+      max-width: 740px;
+      flex-wrap: wrap;
     }
 
     button{
-      margin: 5px;
+      margin: 2px 0;
       height: 60px;
+      width: 220px;
     }
 
     .container-footer{
