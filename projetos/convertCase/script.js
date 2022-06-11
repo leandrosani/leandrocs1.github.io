@@ -24,31 +24,21 @@ lowercaseReference.addEventListener("click", ()=>{
   textareaReference.value = textareaValuelowercase;
 });
 
+
+
 firstUpperReference.addEventListener("click", ()=>{
   captureTextareaValue();
   let textareaValuefirstUpper = textareaValue[0].toUpperCase();
   textareaReference.value = textareaValuefirstUpper + textareaValue.substring(1);
 });
 
-firstUppersReference.addEventListener("click", ()=>{
-  captureTextareaValue();
-  let textareaValueArray = textareaValue.split(" ");
-  // [leandro,do,carmo,santos]
 
-  let firstUppers = [];
-  textareaValueArray.forEach((element, index)=>{
-    firstUppers.push(element[0].toUpperCase() + element.substring(1));
-
-    
-    textareaReference.value = firstUppers.join(" ");
-    
-  });
-
-  
-
-
-  // let textareaValuefirstUppers = textareaValue.toUpperCase();
-  // textareaReference.value = textareaValuefirstUppers;
-
-  
+firstUppersReference.addEventListener("click", ()=>{ 
+  function firstUppers(){
+    const subst = textareaReference.value.toLowerCase().replace(/(?:^|\s)\S/g, (a)=> { //regex
+      return a.toUpperCase();
+    });
+    return subst;
+  };
+  textareaReference.value = firstUppers();
 });
