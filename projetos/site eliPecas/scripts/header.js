@@ -6,23 +6,26 @@ headerRef.innerHTML += `
             <div class="cursor-pointer">
                 <a class="link1" target="_blank" href="https://www.olx.com.br/perfil/eli-pecas-701c49fd">
                     <div class="logo-olx">  <!-- imagem css-->  </div>
-                    <div class="frase-olx">Nossos Produtos</div>
+                    <div class="frase-olx">Olx</div>
                     
                 </a>
             </div>
+
+            <div class="cursor-pointer">
+                <a class="link3" target="_blank" href="https://www.mercadolivre.com.br/perfil/ELII+PE%25C3%2587AS">
+                    <div class="logo-ml">  <!-- imagem css-->  </div>
+                    <div class="frase-olx">Mercado Livre</div>
+                    
+                </a>
+            </div>
+
             <div class="cursor-pointer">
                 <a class="link2" target="_blank" href="https://wa.me/5527998814214">
                     <div class="logo-whatsapp">  <!-- imagem css-->  </div>
                     <div class="numero-whatsapp">Entre em Contato</div>
                 </a>
             </div>
-            <div class="cursor-pointer">
-                <a class="link3" target="_blank" href="cadastro.html">
-                    <div>  <!-- imagem css-->  </div>
-                    <div class="frase-olx">Cadastrar peças</div>
-                    
-                </a>
-            </div>
+            
         </div>  
     </div>
 
@@ -30,7 +33,7 @@ headerRef.innerHTML += `
         <div class="container">
             <div class="header3-bg">
                 <div class="gradient-bg--right">
-                    <div class="chamada">
+                    <div class="chamada" data-anime="top">
                         <div class="container-flex--start">
                             <div class="logo">
                             <a href="index.html">
