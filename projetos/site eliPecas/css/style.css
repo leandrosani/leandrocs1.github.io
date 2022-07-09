@@ -417,7 +417,12 @@ footer .contato{
 .horario-info{align-items: flex-end;}
 
 
-@media (max-width : 600px){
+    @media (max-width : 600px){
+    .header1 .frase-olx,
+    .header1 .numero-whatsapp{
+        align-self: center;
+        display: none;
+    }
 
     .header3-bg{
         background-image: none;
