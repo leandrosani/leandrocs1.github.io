@@ -422,116 +422,143 @@ footer .contato{
 
 
     @media (max-width : 600px){
-    .header1 .frase-olx,
-    .header1 .numero-whatsapp{
-        align-self: center;
-        display: none;
-    }
 
-    .header3-bg{
-        background-image: none;
-    }
+        .section1{
+            padding: 0;
+            width: 100%;
+        }
 
-    .header3 .container-flex--start{
-        margin-top: 0px;
-    }
+        .header1 .frase-olx,
+        .header1 .numero-whatsapp{
+            align-self: center;
+            display: none;
+        }
+
+        .header3{
+            width: 100%;
+        }
+
+        .header3-bg{
+            background-image: none;
+        }
+
+        .header3 .container-flex--start{
+            margin-top: 0px;
+        }
     
-    .logo{
-        padding-bottom: 80px;
-    }
+        .logo{
+            padding-bottom: 80px;
+        }
 
-    .chamada .container-flex--start{
-        justify-content: center;
-        text-align: center;
-    }
+        .chamada .container-flex--start{
+            justify-content: center;
+            text-align: center;
+        }
 
-    .link1,
-    .link2,
-    .link3{
-        font-size: 8px;
-        padding: 0;
-        opacity: 1;
-        margin: 0;
-        background-color: transparent;
-    }
+        .container-flex--center{
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+        }
 
-    .logo-whatsapp,
-    .logo-ml,
-    .logo-olx{
-        margin: 0 15px;
-        background-color: yellow;
-        border-radius: 50%;
-    }
+        .section1 .chamada,
+        .chamada-icons{
+            width: 100%;
+        }
 
-    .linha-1{
-        display: flex;
-    }
-    
-    .linha-1-horizontal{
-        display: none;
-    }
+        .icon-ml{
+            border-radius: 0;
+            height: 130px;
+            width: 130px;
+        }
 
-    .cursor-pointer{
-        margin: 0;
+        .link1,
+        .link2,
+        .link3{
+            font-size: 8px;
+            padding: 0;
+            opacity: 1;
+            margin: 0;
+            background-color: transparent;
+        }
 
-    }
+        .logo-whatsapp,
+        .logo-ml,
+        .logo-olx{
+            margin: 0 15px;
+            background-color: yellow;
+            border-radius: 50%;
+        }
 
-    .container-flex--start{
-        justify-content:space-between;
-    }
-    
-    .header1 .frase-olx,
-    .header1 .numero-whatsapp{
-        align-self: center;
-        font-size: 16px;
-    }
+        .linha-1{
+            display: flex;
+        }
+        
+        .linha-1-horizontal{
+            display: none;
+        }
 
-    .container-flex--end{
-        justify-content: space-between;
-    }
+        .cursor-pointer{
+            margin: 0;
 
-    .chamada h1{
-        font-size: 32px;
-        margin-top: -20px;
-        padding-bottom: 90px;
-        font-weight: 600;
-    }
+        }
 
-    .chamada h4{
-        font-size: 18px;
-    }
+        .container-flex--start{
+            justify-content:space-between;
+        }
+        
+        .header1 .frase-olx,
+        .header1 .numero-whatsapp{
+            align-self: center;
+            font-size: 16px;
+        }
 
-    .section1 .chamada-texto,
-    .section1 .chamada-titulo{
-        text-align: center;
-    }
+        .container-flex--end{
+            justify-content: space-between;
+        }
 
-    .section1 .wrap-servicos{
-        flex-direction: column;
-    }
+        .chamada h1{
+            font-size: 32px;
+            margin-top: -20px;
+            padding-bottom: 90px;
+            font-weight: 600;
+        }
 
-    .wrap-servicos-1,
-    .wrap-servicos-2,
-    .wrap-servicos-3{
-        justify-content:center;
-        width: 100%;
-    }
+        .chamada h4{
+            font-size: 18px;
+        }
 
-    .wrap-servicos-sobre{
-        padding-top: 18px;
-        font-size: 20px;
-    }
+        .section1 .chamada-texto,
+        .section1 .chamada-titulo{
+            text-align: center;
+        }
 
-    .contato-titulo,
-    .horario-titulo{
-        font-size: 16px;
-    }
+        .section1 .wrap-servicos{
+            flex-direction: column;
+        }
 
-    .contato-info,
-    .horario-info{
-        margin-top: 10px;
-        font-size: 14px;
-    }
+        .wrap-servicos-1,
+        .wrap-servicos-2,
+        .wrap-servicos-3{
+            justify-content:center;
+            width: 100%;
+        }
+
+        .wrap-servicos-sobre{
+            padding-top: 18px;
+            font-size: 20px;
+        }
+
+        .contato-titulo,
+        .horario-titulo{
+            font-size: 16px;
+        }
+
+        .contato-info,
+        .horario-info{
+            margin-top: 10px;
+            font-size: 14px;
+        }
 
 
 }
