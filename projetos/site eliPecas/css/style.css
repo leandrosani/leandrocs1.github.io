@@ -27,6 +27,10 @@ body{
     transform: translate3d(-50px, 0, 0);
 }
 
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+
 [data-anime="top"]{
     transform: translate3d(0, -50px, 0);
 }
@@ -445,7 +449,18 @@ footer .contato{
     .link2,
     .link3{
         font-size: 8px;
+        padding: 0;
         opacity: 1;
+        margin: 0;
+        background-color: transparent;
+    }
+
+    .logo-whatsapp,
+    .logo-ml,
+    .logo-olx{
+        margin: 0 15px;
+        background-color: yellow;
+        border-radius: 50%;
     }
 
     .linha-1{
@@ -523,21 +538,6 @@ footer .contato{
 
 @media (max-width : 450px){
 
-    .link1,
-    .link2{
-        padding-right: 10px;
-        border-radius: 15px;
-        font-size: 7px;
-    }
-
-    .link1{
-        background-color: rgba(132, 51, 166, 0.8);
-    }
-    
-    .link2{
-        background-color: rgba(76, 175, 80, 0.8);
-    }
-
     .link1 .dedo-icon{
         display: none;
     }
@@ -577,6 +577,10 @@ footer .contato{
     .icon-olx{
         height: 130px;
         width: 130px;
+    }
+
+    .chamada-icons{
+        flex-direction: column;
     }
 
     footer{
