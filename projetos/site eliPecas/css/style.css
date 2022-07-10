@@ -40,7 +40,12 @@ body{
     transform: translate3d(0px, 0px, 0px);
 }
 
-a{
+p{
+    padding: 10px;
+}
+
+.logo a,
+.container-flex--start a{
     display: flex;
     color: white;
     font-weight: bold;
@@ -153,7 +158,6 @@ a{
 
 .link3{
     background-color: rgba(255, 281, 89, 0.8);
-    color: rgb(37,46,124);
 }
 
 header{
@@ -344,6 +348,10 @@ header .header1{
     font-size: 18px;
     color: var(--comentarios-color);
     font-weight: 400;
+}
+
+.chamada-texto a{
+    width: 20px
 }
 
 .chamada-icons{

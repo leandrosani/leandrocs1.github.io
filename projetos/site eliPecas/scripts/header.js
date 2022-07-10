@@ -44,8 +44,7 @@ headerRef.innerHTML += `
                         </div>
                         <div class="container-flex--start">
                             <h4>
-                                Especializado em Faróis, Para-choques 
-                                e Capôs Usados Originais
+                                Especializados em peças originais usadas
                             </h4>
                         </div>
                     </div>
