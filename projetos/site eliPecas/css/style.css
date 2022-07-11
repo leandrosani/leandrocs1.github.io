@@ -1,7 +1,7 @@
 :root{
     --cizaCLaro-color: #ecf0f1;
     --azulCinza-color: #2c3e50;
-    --laranja-color: #e67e22;
+    --laranja-color: #311700;
     --bordaCinza-color: #d8dcdd;
     --comentarios-color: #929596;
 }
@@ -172,7 +172,7 @@ header .header1{
     align-items: center;
     justify-content: center;
     color: var(--cizaCLaro-color);
-    border-bottom: 2px solid #935116;
+    border-bottom: 2px solid #382000;
 }
 
 .header1 .logo-olx{
@@ -312,7 +312,7 @@ header .header1{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 72px;
+    margin: 0 auto;
     z-index: 99;
 }
 
