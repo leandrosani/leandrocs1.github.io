@@ -107,7 +107,6 @@ p{
 
 .container-flex--center{
     justify-content: center;
-    width: 100%;
 }
 
 .container-flex--between{
@@ -295,13 +294,16 @@ header .header1{
 
 .absolute-div{
     position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 .absolute-div p{
     color: black;
     font-size: 21px;
     font-weight: bold;
-    max-width: 600px;
+    text-align: left;
 }
 
 .section1 .chamada{
@@ -459,6 +461,15 @@ footer .contato{
 }
 
 .horario-info{align-items: flex-end;}
+
+@media (max-width : 940px){
+    .absolute-div p{
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        max-width: 600px;
+    }
+}
 
 
     @media (max-width : 600px){
