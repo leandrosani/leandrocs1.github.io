@@ -107,6 +107,7 @@ p{
 
 .container-flex--center{
     justify-content: center;
+    width: 100%;
 }
 
 .container-flex--between{
@@ -300,6 +301,7 @@ header .header1{
     color: black;
     font-size: 21px;
     font-weight: bold;
+    max-width: 600px;
 }
 
 .section1 .chamada{
@@ -310,6 +312,15 @@ header .header1{
     align-items: center;
     margin-bottom: 72px;
     z-index: 99;
+}
+
+.wrap-icon-p{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-car{
+    padding: 10px;
 }
 
 .section1 .chamada-titulo{
