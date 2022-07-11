@@ -464,15 +464,18 @@ footer .contato{
 
 @media (max-width : 940px){
     .absolute-div p{
-        color: black;
         font-size: 18px;
-        font-weight: bold;
         max-width: 600px;
     }
 }
 
 
     @media (max-width : 600px){
+
+        .absolute-div p{
+            font-size: 16px;
+            max-width: 600px;
+        }
 
         .section1{
             padding: 0;
@@ -515,6 +518,7 @@ footer .contato{
         .section1 .chamada,
         .chamada-icons{
             width: 100%;
+            margin: 0 auto;
         }
 
         .icon-ml{
