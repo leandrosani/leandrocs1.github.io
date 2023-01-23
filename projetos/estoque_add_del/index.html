@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Estoque</title>
+<body>
+	<h3>Estoque de Peças de Carros</h3>
+	<table>
+		<tr>
+			<th>Tipo</th>
+			<th>Marca</th>
+			<th>Modelo</th>
+			<th>Ano</th>
+			<th>Preço</th>
+			<th>Quantidade</th>
+			<th>Ação</th>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" id="tipo" name="entry.139870733"/>
+			</td>
+			<td>
+				<input type="text" id="marca"/>
+			</td>
+			<td>
+				<input type="text" id="modelo"/>
+			</td>
+			<td>
+				<input type="text" id="ano"/>
+			</td>
+			<td>
+				<input type="text" id="preco"/>
+			</td>
+			<td>
+				<input type="text" id="quantidade"/>
+			</td>
+			<td>
+				<input type="button" value="Adicionar" onclick="adicionar(); enviarFormulario();" />
+			</td>
+		</tr>
+	</table>
+<script src="script.js"></script>
+</body>
+</html>

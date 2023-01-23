@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Galeria de Fotos</title>
+	<style>
+    /* body */
+    body{
+      width: 100%;
+    }
+
+    button{
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .buttons{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-top: 40px;
+    }
+
+		/* Galeria de fotos */
+		#galeria {
+			width: 400px;
+			height: 300px;
+			margin: auto;
+			position: relative;
+			border: 1px solid #000;
+		}
+		.foto {
+			position: absolute;
+			width: 400px;
+			height: 300px;
+			left: 0;
+			top: 0;
+			opacity: 0;
+			transition: opacity .5s;
+		}
+		.foto.ativa {
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+	<div id="galeria">
+		<img src="images/1.jpg" class="foto ativa">
+		<img src="images/11.jpg" class="foto">
+		<img src="images/12.jpg" class="foto">
+		<img src="images/13.jpg" class="foto">
+		<img src="images/14.jpg" class="foto">
+		<img src="images/15.jpg" class="foto">
+		<img src="images/2.jpg" class="foto">
+		<img src="images/5.jpg" class="foto">
+	</div>
+  <div class="buttons">
+    <button id="anterior">Anterior</button>
+    <button id="proximo">Próximo</button>
+  </div>
+	<script>
+		var galeria = document.querySelector('#galeria');
+		var fotos = galeria.querySelectorAll('.foto');
+		var anterior = document.querySelector('#anterior');
+		var proximo = document.querySelector('#proximo');
+		var fotoAtiva = 0;
+		
+		// Função para trocar a foto
+		function trocarFoto() {
+			fotos[fotoAtiva].className = 'foto';
+			fotoAtiva = (fotoAtiva + 1) % fotos.length;
+			fotos[fotoAtiva].className = 'foto ativa';
+		}
+		
+		// Botão Próximo
+		proximo.onclick = trocarFoto;
+		
+		// Botão Anterior
+		anterior.onclick = function() {
+			fotos[fotoAtiva].className = 'foto';
+			fotoAtiva = (fotoAtiva + fotos.length - 1) % fotos.length;
+			fotos[fotoAtiva].className = 'foto ativa';
+		}
+	</script>
+</body>
+</html>

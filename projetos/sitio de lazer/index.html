@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sítio de Lazer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Sítio de Lazer</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#atividades">Atividades</a></li>
+			<li><a href="#galeria">Galeria</a></li>
+			<li><a href="#contato">Contato</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section id="atividades">
+			<h2>Atividades</h2>
+			<div class="atividade">
+				<img src="imagens/atividade1.jpg" alt="Atividade 1">
+				<h3>Atividade 1</h3>
+				<p>Descrição da atividade 1</p>
+			</div>
+			<div class="atividade">
+				<img src="imagens/atividade2.jpg" alt="Atividade 2">
+				<h3>Atividade 2</h3>
+				<p>Descrição da atividade 2</p>
+			</div>
+		</section>
+		<section id="galeria">
+			<h2>Galeria</h2>
+			<div class="carrossel">
+				<img src="imagens/foto1.jpg" alt="Foto 1" class="passivo">
+				<img src="imagens/foto2.jpg" alt="Foto 2" class="passivo">
+				<img src="imagens/foto3.jpg" alt="Foto 3" class="passivo">
+			</div>
+		</section>
+		<section id="contato">
+			<h2>Contato</h2>
+			<form>
+				<label for="nome">Nome:</label>
+				<input type="text" id="nome" name="nome">
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" name="email">
+				<label for="mensagem">Mensagem:</label>
+				<textarea id="mensagem" name="mensagem"></textarea>
+				<button type="submit">Enviar</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Todos os direitos reservados</p>
+	</footer>
+	<script src="script.js"></script>
+      </body>
+      </html>
