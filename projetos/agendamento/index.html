@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agendamento de Barbearia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Agendamento de Barbearia</h1>
+  <form id="appointment-form">
+    <label for="name">Nome:</label><br>
+    <input type="text" id="name" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" required><br>
+    <label for="phone">Telefone:</label><br>
+    <input type="tel" id="phone" required><br>
+    <label for="service">Serviço:</label><br>
+    <select id="service">
+      <option value="barba">Barba</option>
+      <option value="cabelo">Cabelo</option>
+      <option value="barba-cabelo">Barba e Cabelo</option>
+    </select>
+    <br><br>
+    <label for="date">Data:</label><br>
+    <input type="date" id="date" required><br>
+    <label for="time">Hora:</label><br>
+    <input type="time" id="time" required><br>
+    <br><br>
+    <input type="submit" value="Agendar">
+  </form> 
+  <script src="script.js"></script>
+</body>
+</html>
