@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+*{ box-sizing: border-box; font-family: 'Open Sans', sans-serif; }
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.h1-73{
+  font-size: 73px;
+  letter-spacing: 5px;
+  margin: 20px 0 20px 0;
+}
+
+.h1-50{
+  font-size: 50px;
+}
+
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 50px;
+}
+
+section.main{
+  background-color: #070725;
+  color: #edeced;
+  height: 100%;
+  border-bottom: 2px solid black;
+}
+
+section.main .right{
+  margin-top: 150px;
+  font-size: 40px;
+}
+
+section.main ul{
+  list-style: none;
+}
+
+section.main li{
+  padding-left: 30px;
+  border: 2px solid black;
+}
+
+section.main .farol,
+section.main .parachoque,
+section.main .lanterna,
+section.main .grade,
+section.main .muito-mais
+{
+  background-color: #eb7f67;
+  text-align: left;
+  margin-bottom: 10px;
+  border-radius: 30px;
+}
+
+section.main .farol{
+  width: 220px;
+}
+
+section.main .grade{
+  width: 270px;
+}
+
+section.main .lanterna{
+  width: 320px;
+}
+
+section.main .muito-mais{
+  width: 370px;
+}
+
+section.main .parachoque{
+  width: 420px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.left-and-right{
+  display: flex;
+}
+
+.left-wrap,
+.right-wrap{
+  flex: 1;
+}
+
+section.main .left-and-right .left-wrap .logo{
+  margin-top: 70px;
+  width: 110px;
+}
+
+section.main .left-and-right .left-wrap .logo img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+button{
+  margin-bottom: 70px;
+  margin-top: 70px;
+  padding: 12px;
+  background-color: #eb7f67;
+  color: #edeced;
+  font-weight: bold;
+  border-radius: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+section.main .left-and-right .right-wrap{
+  background-image: url('../image/eliLogo.jpg');
+  background-size:contain;
+}
+
+section.main .left-wrap .name{
+  font-size: 23px;
+  line-height: 23px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/*section 2*/
+
+section.main-2{
+  background-color: #eb7f67;
+  color: #edeced;
+}
+
+section.main-2 .left-and-right{
+  display: flex;
+}
+
+section.main-2 .left-and-right .left-wrap{
+  flex: 1;
+}
+
+section.main-2 .left-and-right .right-wrap{
+  flex: 1;
+}
+
+section.main-2 .right-wrap .paragrafo{
+  margin: 230px 0 70px 0;
+  font-size: 17px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  padding-right: 50px;
+}
+
+section.main-3 .right-wrap .paragrafo{
+  margin: 0px 0 20px 0;
+  font-size: 17px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  padding-right: 50px;
+}
