@@ -1,0 +1,239 @@
+:root {
+    --cor-1: #FFFFFF;
+    --cor-2: #CCD1D2;
+    --cor-3: #9AA3A6;
+    --cor-4: #677479;
+    --cor-5: #35464D;
+    --cor-6: #021820;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Oswald', sans-serif;
+}
+
+html,body{
+	height: 100%;
+    background: #9AA3A6;
+}
+
+.max-width-desktop{
+	width: 100%;
+	max-width: 1400px;
+	margin:0 auto;
+    display: flex;
+    height: 100%;
+}
+
+.header ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+.header a{
+    text-decoration: none;
+    color: var(--cor-3);
+    margin: 0 10px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.header a:hover{
+    color: var(--cor-1);
+}
+
+.header .max-width-desktop{
+	width: 100%;
+	max-width: 1400px;
+	margin:0 auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header .logo{
+    color: var(--cor-1);
+    font-size: 25px;
+}
+
+.header .container{
+	width: 100%;
+	max-width: 1400px;
+	margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    overflow: hidden;
+}
+
+.header1{
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(53,70,77,1) 35%, rgba(255,255,255,0) 100%); 
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.header-carousel{
+    height: 100vh;
+    width: 300%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 0%;
+    scroll-behavior: smooth;
+    transition: 1s ease-out;
+    /*margin left alterar valores para passar o slide 0% -100% e -200%*/
+}
+
+.header-carousel
+.image-carousel-1,
+.image-carousel-2,
+.image-carousel-3{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.header-carousel .image-carousel-1{
+    background-image: url('../images/Asia_buildings_marina_metropolis_HD_Photo_Wallpaper_2560x1600.jpg');
+    width: 100%;
+    height: 100%;
+    transition: 1s ease-out;
+    
+}
+
+.header-carousel .image-carousel-2{
+    background-image: url('../images/bianco.jpg');
+    width: 100%;
+    height: 100%;
+}
+
+.header-carousel .image-carousel-3{
+    background-image: url('../images/thumb-1920-462366.jpg');
+    width: 100%;
+    height: 100%;
+}
+
+.gradient-background{
+    background: rgba(0, 0, 0, 0.5);
+    height: inherit;
+    width: inherit;
+}
+
+.header-carousel{
+    z-index: 2;
+}
+
+
+.header-carousel .text-overlap{
+    width: 50%;
+    padding-bottom: 110px;
+    margin-left: 50px;
+}
+
+
+.header-carousel .text-overlap h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    color: var(--cor-1);
+}
+
+.header-carousel .text-overlap p{
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: var(--cor-1);
+}
+
+.header .call-site{
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+}
+
+.header .call{
+    color: var(--cor-1);
+    font-size: 32px;
+    background-color: var(--cor-5);
+    padding: 20px;
+    border-top-left-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.header .call:hover{
+    padding-right: 130px;
+}
+
+.main{
+    width: 100%;
+    background-color: var(--cor-1);
+    display: flex;
+    justify-content: center;
+}
+
+.main .max-width-desktop{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--cor-6);
+}
+
+.underline{
+    border-bottom: 2px solid var(--cor-2);
+    width: 50%;
+    margin: 20px;
+}
+
+.wrap-services{
+    width: 80%;    
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrap-services1,
+.wrap-services2,
+.wrap-services3{
+    height: inherit;
+    width: 25%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #ccd1d22c;
+    border-radius: 5px;
+    margin-top: 40px;
+    border: 2px solid #ccd1d2;
+}
+
+.wrap-services li{
+    margin: 30px 30px 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.wrap-services .icons{
+    width: 30px;
+    margin-right: 10px;
+}
