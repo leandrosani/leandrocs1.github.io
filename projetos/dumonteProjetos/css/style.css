@@ -62,6 +62,10 @@ li{
     font-size: 25px;
 }
 
+.header .logo img{
+    width: 180px;
+}
+
 .header .container{
 	width: 100%;
 	max-width: 1400px;
@@ -201,13 +205,11 @@ header{
 .underline{
     border-bottom: 2px solid var(--cor-2);
     width: 50%;
-    margin: 20px;
+    margin: 40px;
 }
 
 .wrap-services{
     width: 80%;    
-    margin-bottom: 10px;
-    margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
 }
@@ -222,7 +224,7 @@ header{
     align-items: center;
     background-color: #ccd1d22c;
     border-radius: 5px;
-    margin-top: 40px;
+    margin: 0 auto;
     border: 2px solid #ccd1d2;
 }
 
