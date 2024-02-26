@@ -12,11 +12,16 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family:'Oswald', sans-serif;
+    scroll-behavior: smooth;
 }
 
 html,body{
 	height: 100%;
-    background: #9AA3A6;
+    background: var(--cor-1);
+}
+
+.scroll{
+    padding-top: 80px;
 }
 
 .max-width-desktop{
@@ -24,14 +29,14 @@ html,body{
 	max-width: 1400px;
 	margin:0 auto;
     display: flex;
-    height: 100%;
+    height: auto;
 }
 
 .header ul{
     display: flex;
 }
 
-li{
+header li{
     list-style: none;
 }
 
@@ -182,34 +187,44 @@ header{
     padding-right: 130px;
 }
 
-.main{
+section{
     width: 100%;
     background-color: var(--cor-1);
     display: flex;
     justify-content: center;
 }
 
-.main .max-width-desktop{
+.section1{
+    padding-bottom: 90px;
+}
+
+section .max-width-desktop{
     display: flex;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 50px;
     flex-direction: column;
 }
 
 .title{
-    font-size: 32px;
+    align-self: self-start;
+    font-size: 38px;
     font-weight: bold;
     color: var(--cor-6);
+    margin-left: 50px;
 }
 
 .underline{
-    border-bottom: 2px solid var(--cor-2);
-    width: 50%;
-    margin: 40px;
+    border-bottom: 2px solid var(--cor-6);
+    width: 92%;
+    margin-top: 18px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    align-self: self-start;
 }
 
 .wrap-services{
-    width: 80%;    
+    width: 100%;    
     display: flex;
     justify-content: space-around;
 }
@@ -239,3 +254,266 @@ header{
     width: 30px;
     margin-right: 10px;
 }
+
+/**************section 2****************/
+
+.section2{
+    background-color:#e4e4e4;
+    margin-top: 220px;
+}
+
+.section2 .max-width-desktop{
+    margin-top: -280px;
+}
+
+.section2 .title{
+    margin-top: 48px;
+}
+
+.section2 .wrap-projects{
+    width: 100%;    
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 48px;
+}
+
+.section2 .wrap-left{
+    display: flex;
+    width: 45%;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-left: 50px;
+    background-color: var(--cor-1);
+    align-items: center;
+}
+
+.section2 .wrap-left h3{
+    font-size: 26px;
+    color: var(--cor-6);
+    line-height: 35px;
+    letter-spacing: 2.5px;
+}
+
+.section2 .wrap-right{
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+}
+
+.section2 .wrap-projects1{
+    border: 1px solid var(--cor-3);
+    width: 42%;
+    height: 380px;
+    min-width: 180px;
+    max-width: 330px;
+}
+
+.section2 .wrap-projects2{
+    border: 1px solid var(--cor-3);
+    width: 42%;
+    height: 380px;
+    min-width: 180px;
+    max-width: 330px;
+}
+
+.section2 .project-image{
+    height: 100%;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.section2 .project-name{
+    color: rgba(0, 0, 0, 0.0);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.section2 .project-image:hover{
+    background-position: center;
+}
+
+.section2 .project-image:hover .project-name{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--cor-1);
+}
+
+.section2 .wrap-projects1 .project-image{
+    background-image: url("../images/project-image-chale.webp");
+}
+
+.section2 .wrap-projects2 .project-image{
+    background-image: url("../images/project-image-casa.jpg");
+}
+
+.section3{
+    background-color: #e4e4e4;
+    list-style: disc;
+}
+
+.wrap-sobre h4{
+    font-size: 26px;
+}
+
+
+.wrap-right ul{
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.wrap-right li{
+    margin: 20px;
+    color: #35464D;
+    text-align: justify;
+}
+
+.wrap-right li b{
+    color: #000000;
+    font-size: 20px;
+}
+
+.section3 .wrap-sobre{
+    width: 100%;    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-bottom: 48px;
+}
+
+.section3 .wrap-left{
+    display: flex;
+    width: 45%;
+    padding-left: 20px;
+    margin-right: 35px;
+    background-image: url(/projetos/dumonteProjetos/images/bianco.jpg);
+    background-position: right;
+    align-items: center;
+}
+
+.section3 .wrap-left h3{
+    font-size: 26px;
+    color: var(--cor-6);
+    line-height: 35px;
+    letter-spacing: 2.5px;
+}
+
+.section3 .wrap-right{
+    width: 55%;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+
+/*SECTION CONTACT*/
+
+
+.container-contato {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.container-contato h2 {
+    padding-top: 20px;
+    text-align: center;
+    color: var(--cor-6);
+}
+
+.container-contato h3 {
+    color: var(--cor-6);
+    padding-left: 35px;
+}
+
+form{
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.contact-form {
+    margin-top: 30px;
+}
+
+.contact-form label{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.contact-form textarea{
+    height: 300px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: var(--cor-2);
+    color: var(--cor-5);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/********************FOOTER*************************/
+
+
+footer{
+    background-color: #021820;
+    color: var(--cor-1);
+}
+
+footer .footer-area{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 60px;
+    list-style: none;
+}
+
+footer .footer-area .footer-left{
+    width: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-section{
+    width: 80%;
+}
+
+footer .footer-area .footer-right{
+    width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .footer-area .footer-right li{
+    list-style: none;
+}
+
