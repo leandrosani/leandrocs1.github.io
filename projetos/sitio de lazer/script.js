@@ -1,5 +1,6 @@
 var carrossel = document.querySelector('.carrossel');
-var imagens = carrossel.querySelectorAll('img');
+var ima
+gens = carrossel.querySelectorAll('img');
 var indiceAtual = 0;
 
 function mostrarProximaImagem() {

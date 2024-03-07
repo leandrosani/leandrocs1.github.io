@@ -68,6 +68,18 @@ contato.addEventListener("click",()=>{
     window.scrollTo(0, 2656);
 });
 
+
+let hamburger = document.querySelector('.menuHamburger');
+let mobileNav = document.querySelector('.nav');
+
+hamburger.addEventListener("click",()=>{
+    if(mobileNav.style.marginLeft == "100%"){
+        mobileNav.style.marginLeft = "0";
+    }else{
+        mobileNav.style.marginLeft = "100%";
+    }
+});
+
 /*
 window.addEventListener('scroll', function(ev){
     console.log(this.scrollY);
