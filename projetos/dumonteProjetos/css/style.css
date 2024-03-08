@@ -651,6 +651,7 @@ footer .footer-area .footer-right li{
         .menuHamburger img{
             width: 100%;
             height: auto;
+            filter: brightness(0) saturate(100%) invert(90%) sepia(0%) saturate(44%) hue-rotate(237deg) brightness(100%) contrast(79%);
         }
 
         .menuX{
@@ -659,11 +660,13 @@ footer .footer-area .footer-right li{
             top: 20px;
             right: 50px;
             display: none;
+            
         }
 
         .menuX img{
             width: 100%;
             height: auto;
+            filter: brightness(0) saturate(100%) invert(90%) sepia(0%) saturate(44%) hue-rotate(237deg) brightness(100%) contrast(79%);
         }
 
         .blur{
