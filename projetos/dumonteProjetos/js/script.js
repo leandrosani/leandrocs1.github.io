@@ -73,6 +73,7 @@ let hamburger = document.querySelector('.menuHamburger');
 let mobileNav = document.querySelector('.nav');
 let gradient = document.querySelector('.blur');
 let menuX = document.querySelector('.menuX');
+let menuComplit = document.querySelector('.menu');
 
 mobileNav.style.marginLeft = "-100%"
 
@@ -87,6 +88,14 @@ hamburger.addEventListener("click",()=>{
 });
 
 gradient.addEventListener("click",()=>{
+    gradient.style.display = "none"
+    gradient.style.position = "fixed";
+    hamburger.style.display = "block";
+    mobileNav.style.marginLeft = "-100%";
+    menuX.style.display = "none"
+});
+
+menuComplit.addEventListener("click",()=>{
     gradient.style.display = "none"
     gradient.style.position = "fixed";
     hamburger.style.display = "block";

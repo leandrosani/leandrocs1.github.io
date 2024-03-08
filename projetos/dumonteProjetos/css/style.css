@@ -24,6 +24,10 @@ header{
     overflow: hidden;
 }
 
+.nav-title{
+    display: none;
+}
+
 .scroll{
     padding-top: 80px;
 }
@@ -426,6 +430,7 @@ section .max-width-desktop{
     padding-top: 20px;
     text-align: center;
     color: var(--cor-6);
+    margin: 0 auto;
 }
 
 .container-contato h3 {
@@ -540,6 +545,10 @@ footer .footer-area .footer-right li{
         margin-left: 0px;
     }
 
+    .call{
+        display: none;
+    }
+
 
     .header-carousel .text-overlap h1{
         margin-bottom: 35px;
@@ -631,23 +640,30 @@ footer .footer-area .footer-right li{
         }
 
         .menuHamburger{
-            width: 40px;
+            width: 50px;
             margin-left: 10px;
             position: absolute;
             z-index: 4;
-            top: 0;
+            top: 20px;
             left: 0;
         }
 
+        .menuHamburger img{
+            width: 100%;
+            height: auto;
+        }
+
         .menuX{
-            width: 40px;
-            font-size: 40px;
-            margin-left: 10px;
+            width: 50px;
             position: absolute;
-            top: 25px;
-            right: 35px;
+            top: 20px;
+            right: 50px;
             display: none;
-            color: var(--cor-1);
+        }
+
+        .menuX img{
+            width: 100%;
+            height: auto;
         }
 
         .blur{
@@ -664,11 +680,6 @@ footer .footer-area .footer-right li{
             color: var(--cor-2);
         }
 
-        .linha{
-            border-bottom: 2px solid white;
-            padding: 10px 0px;
-        }
-
         .nav{
             margin-left: -100%;
             width: 75%;
@@ -681,6 +692,7 @@ footer .footer-area .footer-right li{
         }
 
         .nav-title{
+            display: block;
             height: 110px;
             display: flex;
             font-size: 25px;
@@ -730,9 +742,6 @@ footer .footer-area .footer-right li{
             color: none;
         }
         
-
-
-
         .header-carousel .text-overlap h1{
             font-size: 35px;
             margin-bottom: 35px;
@@ -839,13 +848,17 @@ footer .footer-area .footer-right li{
             padding-right: 20px;
         }
 
+        form{
+            margin-top: 0;
+        }
+
 
         /********************FOOTER*************************/
 
         footer .footer-area{
             display: flex;
             width: 100%;
-            flex-direction: column;
+            flex-direction: column-reverse;
             padding: 20px 0;
             list-style: none;
             text-align: center;
@@ -857,7 +870,7 @@ footer .footer-area .footer-right li{
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            margin-bottom: 30px;
+            margin-top: 30px;
         }
 
         .footer-section{
@@ -868,7 +881,6 @@ footer .footer-area .footer-right li{
             width: 100%;
             display: flex;
             align-items: center;
-
             flex-direction: column;
         }
 
@@ -878,9 +890,56 @@ footer .footer-area .footer-right li{
 
 
 
+        .footer-final ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
 
-
+        .footer-final ul li{
+            margin: 10px;
+        }
 
             }      /*END 600px*/
+
+
+            /****************500******************/
+
+    @media only screen and (max-width: 500px){
+        .header-carousel .text-overlap h1{
+            font-size: 24px;
+            margin-bottom: 35px;
+            letter-spacing: 2px;
+            color: var(--cor-1);
+        }
+    
+        .header-carousel .text-overlap p{
+            font-size: 20px;
+        }
+        
+        .title{
+            font-size: 24px;
+        }
+
+        h3{
+            font-size: 20px;
+        }
+
+        .wrap-sobre h4{
+            font-size: 20px;
+        }
+
+        .section2 .wrap-projects1,
+        .section2 .wrap-projects2{
+            height: 280px;
+        }
+
+        .container-contato h2 {
+            font-size: 24px;
+        }
+        
+
+    }        
 
 }
