@@ -24,6 +24,10 @@ header{
     overflow: hidden;
 }
 
+.nav-title{
+    display: none;
+}
+
 .scroll{
     padding-top: 80px;
 }
@@ -540,6 +544,10 @@ footer .footer-area .footer-right li{
         margin-left: 0px;
     }
 
+    .call{
+        display: none;
+    }
+
 
     .header-carousel .text-overlap h1{
         margin-bottom: 35px;
@@ -681,6 +689,7 @@ footer .footer-area .footer-right li{
         }
 
         .nav-title{
+            display: block;
             height: 110px;
             display: flex;
             font-size: 25px;
