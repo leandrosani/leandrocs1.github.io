@@ -24,7 +24,8 @@ header{
     overflow: hidden;
 }
 
-.nav-title{
+.nav-title,
+.menuHamburger img{
     display: none;
 }
 
@@ -639,8 +640,12 @@ footer .footer-area .footer-right li{
             width: 92%;
         }
 
+        .header1 {
+            height: 70px;
+        }
+
         .menuHamburger{
-            width: 50px;
+            width: 40px;
             margin-left: 10px;
             position: absolute;
             z-index: 4;
@@ -649,16 +654,17 @@ footer .footer-area .footer-right li{
         }
 
         .menuHamburger img{
+            display: block;
             width: 100%;
             height: auto;
             filter: brightness(0) saturate(100%) invert(90%) sepia(0%) saturate(44%) hue-rotate(237deg) brightness(100%) contrast(79%);
         }
 
         .menuX{
-            width: 50px;
+            width: 30px;
             position: absolute;
             top: 20px;
-            right: 50px;
+            right: 40px;
             display: none;
             
         }
