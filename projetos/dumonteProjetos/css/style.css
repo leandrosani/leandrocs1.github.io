@@ -92,7 +92,7 @@ header{
     align-items: center;
     position: fixed;
     top: 0;
-    z-index: 100;
+    z-index: 1;
 }
 
 .header-carousel{
@@ -216,11 +216,10 @@ section .max-width-desktop{
 
 .underline{
     border-bottom: 2px solid var(--cor-6);
-    width: 92%;
+    width: 96%;
     margin-top: 18px;
     margin-bottom: 40px;
-    margin-left: 50px;
-    align-self: self-start;
+    align-self: self-end;
 }
 
 .wrap-services{
@@ -626,13 +625,43 @@ footer .footer-area .footer-right li{
 
     @media only screen and (max-width: 600px){
 
+
+        .underline{
+            width: 92%;
+        }
+
         .menuHamburger{
             width: 40px;
-            margin-right: 10px;
+            margin-left: 10px;
             position: absolute;
-            z-index: 3;
+            z-index: 4;
             top: 0;
-            right: 0;
+            left: 0;
+        }
+
+        .menuX{
+            width: 40px;
+            font-size: 40px;
+            margin-left: 10px;
+            position: absolute;
+            top: 25px;
+            right: 35px;
+            display: none;
+            color: var(--cor-1);
+        }
+
+        .blur{
+            opacity: 0;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+            width: 100%;
+            height: 1200vh;
+            display: none;
+            position: absolute;
+        }
+
+        .blur p{
+            font-size: 200px;
+            color: var(--cor-2);
         }
 
         .linha{
@@ -641,12 +670,26 @@ footer .footer-area .footer-right li{
         }
 
         .nav{
-            width: 100%;
+            margin-left: -100%;
+            width: 75%;
             position: absolute;
             top: 0;
-            z-index: 1;
-            margin-left: 100%;
+            display: flex;
+            flex-direction: column;
+            z-index: 5;
             transition: 0.6s;
+        }
+
+        .nav-title{
+            height: 110px;
+            display: flex;
+            font-size: 25px;
+            align-items: center;
+            padding-left: 30px;
+            color: var(--cor-1);
+            background-color: var(--cor-5);
+            border-bottom: 3px solid var(--cor-6);
+            border-right: 3px solid var(--cor-6);;
         }
 
         .menu{
@@ -656,14 +699,17 @@ footer .footer-area .footer-right li{
         .header ul{
             flex-direction: column;
             background-color: var(--cor-2);
+            width: 100%;
+            border-bottom: 3px solid var(--cor-6);
+            border-right: 3px solid var(--cor-6);
          }
         
         .header li{
             display: flex;
             align-items: center;
-            height: 50px;
+            height: 70px;
             width: inherit;
-            border: 1px solid var(--cor-3);
+            border: 1px solid #dad4d4;
         }
         
         .header a{
@@ -676,6 +722,7 @@ footer .footer-area .footer-right li{
             color: var(--cor-5);
             cursor: pointer;
             transition: 0.5s ease;
+            font-size: 20px;
             font-weight: bold;
         }
         

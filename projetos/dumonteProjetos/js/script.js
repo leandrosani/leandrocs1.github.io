@@ -71,13 +71,27 @@ contato.addEventListener("click",()=>{
 
 let hamburger = document.querySelector('.menuHamburger');
 let mobileNav = document.querySelector('.nav');
+let gradient = document.querySelector('.blur');
+let menuX = document.querySelector('.menuX');
+
+mobileNav.style.marginLeft = "-100%"
 
 hamburger.addEventListener("click",()=>{
-    if(mobileNav.style.marginLeft == "100%"){
-        mobileNav.style.marginLeft = "0";
-    }else{
-        mobileNav.style.marginLeft = "100%";
-    }
+    gradient.style.display = "block"
+    gradient.style.position = "absolute";
+    gradient.style.zIndex = "1";
+    gradient.style.opacity = "1";
+    hamburger.style.display = "none";
+    mobileNav.style.marginLeft = "0";
+    menuX.style.display = "block"
+});
+
+gradient.addEventListener("click",()=>{
+    gradient.style.display = "none"
+    gradient.style.position = "fixed";
+    hamburger.style.display = "block";
+    mobileNav.style.marginLeft = "-100%";
+    menuX.style.display = "none"
 });
 
 /*
