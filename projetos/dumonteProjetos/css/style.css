@@ -25,7 +25,8 @@ header{
 }
 
 .nav-title,
-.menuHamburger img{
+.menuHamburger img,
+.menuX img{
     display: none;
 }
 
@@ -377,7 +378,7 @@ section .max-width-desktop{
 .wrap-right li{
     margin: 20px;
     color: #35464D;
-    text-align: justify;
+    text-align: center;
 }
 
 .wrap-right li b{
@@ -560,7 +561,7 @@ footer .footer-area .footer-right li{
     .header-carousel .text-overlap p{
         font-size: 28px;
         letter-spacing: 0px;
-        text-align: justify;
+        text-align: left;
     }
 
 /*SECTION 2*/      
@@ -588,7 +589,7 @@ footer .footer-area .footer-right li{
     .section2 .wrap-left h3{
         font-size: 28px;
         letter-spacing: 0px;
-        text-align: justify;
+        text-align: left;
         padding-bottom: 35px;
     }
 
@@ -615,6 +616,10 @@ footer .footer-area .footer-right li{
         background-image: url(/projetos/dumonteProjetos/images/bianco.jpg);
         background-position: right;
         align-items: center;
+    }
+
+    .wrap-right li{
+        text-align: left;
     }
 
     .section3 .wrap-left h3{
@@ -836,6 +841,7 @@ footer .footer-area .footer-right li{
         
         .wrap-right li{
             list-style: none;
+            text-align: left;
         }
         
         .wrap-right li b{
