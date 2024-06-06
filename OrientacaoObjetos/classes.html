@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    class Pessoa{
+      constructor(idade, telefone, cpf){          
+        this.idade = idade;
+        this.telefone = telefone;
+        this.cpf = cpf;
+      }
+    }
+
+    var vIdade = prompt('Informe a sua idade?')
+    var vTelefone = prompt('Informe o seu telefone?')
+    var vCpf = prompt('Informe o seu CPF?')
+    
+    leandro = new Pessoa(vIdade, vTelefone, vCpf);
+
+    alert("Você tem "+leandro.idade+" anos");
+    alert("Seu telefone é o "+leandro.telefone);
+    alert("Cpf é "+leandro.cpf);
+
+    alert("Visão geral "+leandro)
+
+    
+
+  </script>
+</body>
+</html>

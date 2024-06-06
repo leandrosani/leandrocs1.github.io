@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wrap-color{
+  width: 80%;
+  height: 350px;
+}
+
+
+button{
+  width: 90px;
+  height: 50px;
+  cursor: pointer;
+}
+
+button.blue{
+  background-color: blue;
+  color: white;
+}
+
+button.red{
+  background-color: red;
+  color: white;
+}
+
+button.yellow{
+  background-color: yellow;
+  color: black;
+}
