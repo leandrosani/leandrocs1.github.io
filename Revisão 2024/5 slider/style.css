@@ -1,0 +1,41 @@
+.container{
+    width: 100%;
+    height: 550px;
+    margin-bottom: 10px;
+}
+
+.wrap-img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container img{
+    width:100%;
+    max-width: 800px;
+    transition:1s;
+    position: absolute;
+    opacity: 0;
+}
+
+.container .opacity{
+  opacity: 1 !important;
+}
+
+.bullets{
+    text-align: center;
+}
+
+.bullet-single{
+    margin:0 8px;
+    cursor: pointer;
+    display: inline-block;
+    width:20px;
+    height:20px;
+    border-radius:10px;
+    background-color: #ccc;
+}
+
+.active-bullet{
+    background-color:#333;
+}

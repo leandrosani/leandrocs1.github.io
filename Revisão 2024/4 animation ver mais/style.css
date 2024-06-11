@@ -1,0 +1,26 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.conteudo{
+  width: 70%;
+  margin: 0 auto;
+}
+
+span{
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.conteudo p{
+  overflow: hidden;
+  height: 10px;
+  transition: 0.5s;
+}
+
+.mostrar{
+  height: 200px !important;
+}
