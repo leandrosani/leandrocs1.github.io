@@ -1,5 +1,6 @@
   const bullets = document.querySelectorAll(".bullet-single");
   const images = document.querySelectorAll("img");
+  images[0].classList.add("opacity");
 
   bullets.forEach((bullet, index) => {
     bullet.addEventListener("click", () => {
@@ -9,11 +10,8 @@
       
       // Adiciona ou remove a classe 'opacity' na imagem correspondente ao bullet clicado
       images[index].classList.add("opacity");
-      bullet.classList.add("active-bullet")
-
+      bullet.classList.add("active-bullet");
     });
-
-
   });
 
 
